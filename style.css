@@ -4,8 +4,12 @@
     padding: 0%
 }
 
+.underline-red:hover{
+    text-decoration: underline solid rgb(213, 8, 8);
+}
 @media only screen and (max-width: 600px) { /* phones*/
   
+
     .burger{
         text-align: center;
     }
@@ -46,12 +50,13 @@
     .navbar{
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 1.2fr 3fr 6fr 3fr;
+        grid-template-columns:1.4fr 2fr 7fr 2.6fr;
         align-items: center;
         position: fixed;
         top: 0px;
         background: white;
         height: 9%;
+        box-shadow: 0px -2px 10px -1px gray;
 
     }
     .navbar div{
@@ -88,6 +93,7 @@
         height:  60%;
         display: grid;
         grid-auto-flow: column;
+        grid-template-columns: 7fr 1fr;
       
     }
 
@@ -107,12 +113,12 @@
     
     .full-container-grid{
         display: grid;
-        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 2.7fr 1fr;
       
         height: 700vh;
     }
     .full-container-grid> div {
-        border: 1px solid black;
+        
     }
     .page-1-container{
         display: grid;
@@ -236,14 +242,124 @@
     grid-template-rows:  1fr 1fr;
     justify-items: center;
     align-items: start;
+    row-gap: 25px;
+}
+
+.trending-title{
+    border-bottom: 8px solid #e7ab46 ;
+    font-size: 1.8em;
+    line-height: 14px;
+    font-family: CopperPot, Helvetica, sans-serif;;
+}
+
+.trend-card h3:hover{
+    text-decoration: underline solid rgb(213, 8, 8);
 }
 .trend-card{
-    width: 90%;
+    width: 88%;
 }
+.trend-card *{
+    margin-top: 10px;
+}
+
 .trend-card img {
     width: 100%;
 }
 
+
+.trend-card h4{
+color: #595959;
+}
+ .trend-card{
+    font-family:  CopperPot, Helvetica, sans-serif;;
+ }
+
+ .page-4-container{
+    display: grid;
+    grid-template-rows: 0.7fr 1fr 1fr;
+    border-image: linear-gradient(to right, #f9ac3a 0%, #f27b41 100%) 1;
+   
+    border-width: 15px;
+    border-style: solid;
+    margin: 10px
+
+ }
+ .homecook-title{
+    display: grid;
+   
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 3fr 1fr;
+    
+ }
+ .homecook-title h2{
+    align-self: center;
+    font-size: 2.7em;
+    width: 50%;
+    font-family: CopperPot, Helvetica, sans-serif;;
+    color: #fbd657;
+    -webkit-text-stroke: 1px black;
+ }
+
+ .community-msg{
+    align-self: center;
+    font-size: 1.3em;
+    width: 80%;
+ }
+ .community-msg span{
+   color: #d54215;
+   
+ }
+ 
+ .community-msg span:after{
+    font-family: FontAwesome; 
+    content: "\f105";
+    
+  }
+ .person-state{
+   display: grid;
+   align-items: center;
+   justify-items: center;
+ }
+
+ .person-state img{
+   width: 60%;
+  }
+  
+ .page-5-container{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+  
+ }
+ 
+ .page-5-container *{
+ 
+  display: grid;
+  justify-items: center;
+ }
+ .page-5-container h3{
+    width: 80%;
+    text-align: center;
+    margin: 7px;
+    font-weight: 400;
+   
+ }
+ .page-5-container h2 {
+    border-bottom: 1px solid rgb(199, 17, 17);
+
+ }
+ 
+ .page-5-container h2:hover {
+    border-bottom: 2px solid rgb(199, 17, 17);
+
+ }
+
+ .page-5-container h4  {
+ font-size: 1.35em;
+
+ }
 }
 
 
