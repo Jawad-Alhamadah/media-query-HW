@@ -1,18 +1,109 @@
 
+*{
+    margin: 0%;
+    padding: 0%
+}
+
 @media only screen and (max-width: 600px) { /* phones*/
   
-    .navbar{
-        display: flex;
-        justify-content: space-between;
+    .burger{
+        text-align: center;
     }
-    .navbar div{
-        border: 1px solid black;
+    .burger::before{
+        font-family: FontAwesome;
+        content: "\f0c9";
+        color: black;
+    }
+    .hidden-nav-list{
+       
+    }
+    .hidden-nav-list{
+        background-color: white;
+        list-style: none;
+        width: 100%;
+        position: absolute;
+        top:140%;
+        left: -100%;
+        transition: 0.3s;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        height: 100vh;
     }
 
+    
+    .burger:hover +ul{
+        left: 15%;
+       
+       
+        
+       
+    }
+    .navbar{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1.2fr 3fr 6fr 3fr;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        background: white;
+        height: 9%;
+
+    }
+    .navbar div{
+       
+    }
+
+    .navbar img{
+      width:80%;
+    }
+     .login-container{
+        justify-self: center;
+        display: flex;
+        width: 57%;
+        height: 50%;
+         }
+     
+     .login-title{
+       align-self: center;
+     }
+     .user-icon{
+        display: grid;
+       background-color: #d54215;
+       border-radius: 50%;
+       justify-content: center;
+       width: 44%;
+       align-items: center;
+     }
+     .user-icon:before{
+        font-family: FontAwesome;
+        content: "\f007";
+        color: white;
+     }
+    .search-bar{
+        height:  60%;
+        display: grid;
+        grid-auto-flow: column;
+      
+    }
+
+    .search-bar > button {
+        background-color: #d54215;
+        color: white;
+    }
+    .search-bar > button::before {
+        font-family: FontAwesome;
+        content: " \f002";
+        color: white;
+    }
+    .search-bar * {
+        border-radius: 5px;
+    }
+   
+  
     .full-container-grid{
         display: grid;
-        grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        border: 1px solid red;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      
         height: 700vh;
     }
     .full-container-grid> div {
