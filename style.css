@@ -482,12 +482,38 @@ width: 90%;
     }
     .people-card-6-limit{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
         
+        
     }
+    .people-card-6-limit >div{
+      display: grid;
+      justify-items: center;
+      align-items: center;
+    
+    }
+    .people-card-3-limit >div{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      
+      }
+    .people-card-6-limit img{
+   width: 70%;
+        
+    }
+    .people-card-3-limit img{
+        width: 70%;
+             
+         }
+
+         .page-7-container{
+           
+         }
+
 }
 
 
