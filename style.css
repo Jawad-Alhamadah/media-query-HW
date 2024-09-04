@@ -462,6 +462,13 @@ width: 90%;
      
         text-decoration: underline solid #dc5019;;
     }
+    .page-6-container h2:after{
+     
+      font-family: FontAwesome;
+      content: "\f105";
+      margin-left: 5px;
+    }
+    
     .page-6-container{
         display: grid;
         grid-template-rows: 1fr 5fr 1fr 3.5fr 1fr 3.5fr;
