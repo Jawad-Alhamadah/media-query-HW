@@ -1,0 +1,30 @@
+
+@media only screen and (max-width: 600px) { /* phones*/
+  
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar div{
+        border: 1px solid black;
+    }
+
+    .full-container-grid{
+        display: grid;
+        grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        border: 1px solid red;
+        height: 700vh;
+    }
+    .full-container-grid> div {
+        border: 1px solid black;
+    }
+}
+
+
+@media only screen and (min-width: 600px) { /*laptops*/
+    .full-container-grid{
+  
+    }
+
+
+}
