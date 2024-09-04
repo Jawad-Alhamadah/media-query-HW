@@ -22,17 +22,22 @@
         list-style: none;
         width: 100%;
         position: absolute;
-        top:140%;
+        top:110%;
         left: -100%;
         transition: 0.3s;
         display: grid;
         grid-template-rows: auto auto auto auto auto auto;
         height: 100vh;
+
+    }
+    .hidden-nav-list li{
+   margin-left: 15px;
+        
     }
 
     
     .burger:hover +ul{
-        left: 15%;
+        left: 0%;
        
        
         
@@ -99,7 +104,7 @@
         border-radius: 5px;
     }
    
-  
+    
     .full-container-grid{
         display: grid;
         grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -109,6 +114,136 @@
     .full-container-grid> div {
         border: 1px solid black;
     }
+    .page-1-container{
+        display: grid;
+        grid-template-rows: 0.65fr 4fr;
+        grid-auto-flow: row;
+ 
+    }
+    .page-1-banner{
+        display: grid;
+        background-color: #114388;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 0.9em;
+        font-family: SourceSansPro, Helvetica, sans-serif;
+ 
+    }
+    .page-1-banner h2{
+       font-size: 1.1em;
+    }
+
+    .page-1-banner span{
+       
+        color: #f4d657;
+    }
+
+    .page-1-banner h3{
+        font-size: 2em;
+
+    }
+    .dot-display{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .page-1-img{
+        display: grid;;
+        
+        justify-items: center;
+        align-items: center;
+
+    }
+    .page-1-img img{
+        margin-top: 10px;
+        width: 90%;
+     
+     
+    }
+    .chicken-titles{
+        width: 90%;
+        align-self: self-start;
+        font-family: SourceSansPro, Helvetica, sans-serif;;
+    }
+     .chicken-titles * {
+        margin-top: 5px;
+     }
+    .page-1-img h4{
+        font-size: 1em;
+        font-weight: 600;
+        color: #585959;
+    }
+    .page-1-img h5{
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    .page-1-img h6{
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    .page-2-container{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+ 
+    }
+.food-news-grid{
+    background-color: #f5f6ea;
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr; 
+    height: 75%;
+    align-items: center;
+   
+}
+.food-title{
+    font-weight: 700;
+    font-size: 1.3em;
+    font-family: CopperPot, Helvetica, sans-serif;;
+   
+}
+.food-news-card-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1.2fr 3fr;
+    width: 90%;
+}
+.food-news-card-container img{
+    width: 100%;
+    
+}
+
+.food-news-card-container p{
+    font-size: 0.9em;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: CopperPot, Helvetica, sans-serif;
+    line-height: 3vh;
+}
+
+.page-3-container{
+    display: grid;
+    grid-template-rows: 0.7fr 8fr;
+    justify-items: center;
+    align-items: center;
+}
+.trending-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    justify-items: center;
+    align-items: start;
+}
+.trend-card{
+    width: 90%;
+}
+.trend-card img {
+    width: 100%;
+}
+
 }
 
 
